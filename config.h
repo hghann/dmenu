@@ -7,18 +7,18 @@ static int min_width = 500;  /* minimum width when centered */
 static int fuzzy = 1;        /* -F  option; if 0, dmenu doesn't use fuzzy matching     */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"monospace:pixelsize=10:antialias=true:autohint=true",
-	"JoyPixels:pixelsize=11:antialias=true:autohint=true"
+	"Hack:pixelsize=11:antialias=true:autohint=true",
+	"JoyPixels:pixelsize=8:antialias=true:autohint=true"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#cccccc", "#222222" },
-	[SchemeSel] = { "#ffffff", "#74438f" },
-	[SchemeSelHighlight] = { "#d7d7d7", "#000000" },
-	[SchemeNormHighlight] = { "#a5bdf8", "#000000" },
-	[SchemeOut] = { "#000000", "#00ffff" },
-	[SchemeMid] = { "#d7d7d7", "#1f2026" },
+	[SchemeNorm] = { "#cccccc", "#282c34" },
+	[SchemeSel] = { "#1c1f24", "#c678dd" },
+	[SchemeSelHighlight] = { "#98be65", "#000000" },
+	[SchemeNormHighlight] = { "#98be65", "#000000" },
+	[SchemeOut] = { "#000000", "#51afef" },
+	[SchemeMid] = { "#d7d7d7", "#1c1f24" },
 };
 /* -l and -g options; controls number of lines and columns in grid if > 0 */
 static unsigned int lines      = 0;
